@@ -7,7 +7,7 @@ function rollDice(sides) {
 
 // FUNCTION #2: generate "roll" message
 function showRollMessage(roll) {
-    return "You rolled a " + roll + "!";
+    return "You rolled a... " + roll + "!";
 }
 
 // FUNCTION #3: check if roll = lucky number
@@ -15,7 +15,7 @@ function checkLuckyNumber(roll, luckyNumber) {
     if (roll == luckyNumber) {
         return "You got the Lucky Number!";
     } else {
-        return "Try again!";
+        return "Roll again!";
     }
 }
 
