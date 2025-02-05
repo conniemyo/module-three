@@ -7,7 +7,7 @@ function rollDice(sides){
 
 // function #2: generate "roll" message
 function showRollMessage(roll){
-    return "You rolled a... " + roll + "!";
+    return "You rolled a... " + roll;
 }
 
 // function #3: check if roll = lucky number
@@ -36,9 +36,10 @@ document.getElementById("rollDiceBtn").addEventListener("click", function(){
     let luckyNumber = prompt("Pick a lucky number from 1-6:");
     luckyNumber = Number(luckyNumber);
 
+    // invoking functions
     let roll = dice.roll();
     let rollMessage = showRollMessage(roll);
     let luckyMessage = checkLuckyNumber(roll, luckyNumber);
-    
+
     document.getElementById("diceOutput").innerHTML = rollMessage + "<br>" + luckyMessage;
 });
