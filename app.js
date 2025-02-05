@@ -39,9 +39,6 @@ document.getElementById("rollDiceBtn").addEventListener("click", function(){
     let roll = dice.roll();
     let rollMessage = showRollMessage(roll);
     let luckyMessage = checkLuckyNumber(roll, luckyNumber);
-
-    console.log(rollMessage);
-    console.log(luckyMessage);
-
+    
     document.getElementById("diceOutput").innerHTML = rollMessage + "<br>" + luckyMessage;
 });
